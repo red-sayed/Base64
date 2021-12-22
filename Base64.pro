@@ -4,7 +4,6 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        Base64.cpp \
         main.cpp
 
 HEADERS += \
