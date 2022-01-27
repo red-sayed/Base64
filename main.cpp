@@ -20,7 +20,7 @@ int main() {
             getline(std::cin, s);
             std::cout << std::endl;
 
-            std::cout << "[\033[93mBase64\033[0m] \033[4mEncrypted message:\033[0m" << std::endl << std::endl << Red::Base64Encode(s);
+            std::cout << "[\033[93mBase64\033[0m] \033[4mEncrypted message:\033[0m" << std::endl << std::endl << *Red::Base64Encode(&s);
             std::cout << std::endl << std::endl << std::endl << "Press Enter to continue.";
 
             std::cin.get();
@@ -33,7 +33,7 @@ int main() {
             getline(std::cin, s);
             std::cout << std::endl;
 
-            std::cout << "[\033[93mBase64\033[0m] Decrypted message:" << std::endl << std::endl << Red::Base64Decode(s);
+            std::cout << "[\033[93mBase64\033[0m] Decrypted message:" << std::endl << std::endl << *Red::Base64Decode(&s);
             std::cout << std::endl << std::endl << std::endl << "Press Enter to continue.";
 
             std::cin.get();
