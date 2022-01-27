@@ -12,10 +12,10 @@ Function prototypes:
 
 ```C
 // Encryption.
-inline std::string Base64Encode(std::string const &data);
+inline std::string * Base64Encode(std::string *data);
 
 // Decryption.
-inline std::string Base64Decode(std::string const &data);
+inline std::string * Base64Decode(std::string *data);
 ```
 
 ## Example:
